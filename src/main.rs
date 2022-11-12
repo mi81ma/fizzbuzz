@@ -1,7 +1,8 @@
 fn fizzbuzz(end: i32) {
-    let mut x: i32 = 1;
+    // let mut x: i32 = 1;
+    let r = 1..=end;
 
-    while x <= end {
+    for x in r {
         if x % 3 == 0 && x % 5 == 0 {
             println!("Fizzbuzz");
         } else if x % 3 == 0 {
@@ -11,7 +12,6 @@ fn fizzbuzz(end: i32) {
         } else {
             println!("{}", x);
         }
-        x += 1;
     }
 }
 
